@@ -1,0 +1,116 @@
+   .header {
+   @media (max-width: 768px) {
+       .header__btn {
+        //    
+        display: none;
+       }
+ .burger__menu {
+     display: block;
+     position: relative;
+     height: 20px;
+     width: 30px;
+     margin-left: 15px;
+        transition: all 1s ease 0s;
+ }
+
+ .burger__menu::before,
+ .burger__menu::after {
+     content: '';
+     background-color: #9cb891;
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     left: 0;
+        transition: all 1s ease 0s;
+ }
+
+ .burger__menu::before {
+     top: 0;
+ }
+
+ .burger__menu::after {
+     bottom: 0;
+ }
+
+ .burger__menu.active:before {
+     transform: rotate(45deg);
+     top: 9px;
+ }
+
+ .burger__menu.active:after {
+     transform: rotate(-45deg);
+     bottom: 9px;
+ }
+
+ .burger__menu.active span {
+     transform: scale(0);
+ }
+
+ .burger_img {
+     position: absolute;
+     background-color: #9cb891;
+     left: 0;
+     width: 100%;
+     height: 2px;
+     top: 9px;
+     transition: all 2s ease 0s;
+ }
+
+ .header__nav {
+     position: absolute;
+     flex-direction: column;
+     align-items: center;
+     bottom: 100px;
+     width: 100%;
+     height: 65vh;
+     margin: 0;
+     background: url(../img/burgerback.webp);
+     background-size: cover;  
+    transition: all 0.3s ease 0s;
+ }
+
+ .header__nav-li {
+     text-align: center;
+     font-size: 35px;
+     width: 100%;
+     height: 10vh;
+     border-bottom: 1px solid #fff;
+    color: #000;
+ }
+
+ .header__nav.active {
+     top: 70px;
+
+ }
+
+ .header__logo {
+     position: absolute;
+     left: 90%;
+ }
+
+ .show_btn {
+     display: block;
+ }
+   }
+}
+ .content__section {
+   @media (max-width: 768px) {
+       .tab_content {
+           flex-direction: column;
+            height: 60vh;
+            
+       }
+        .tab_text {
+            align-items: center;
+            justify-content: space-evenly;       
+                }
+       .none-img {
+           display: none;
+       }
+   }
+   }
+.people__opinion {
+    @media (max-width: 768px) {
+
+    }
+}
